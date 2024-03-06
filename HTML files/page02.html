@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
-    <title>Skills</title>
+    <title>Work-history</title>
     <style>
         body{
             margin:0px;
@@ -168,7 +168,7 @@
             font-family:'Roboto',sans-serif;
             color:rgb(48, 44, 44);
         }
-       
+
         .headdiv2{
             display:flex;
             justify-content:space-between;
@@ -190,7 +190,6 @@
         .text-hidden{
             color:rgb(124, 122, 122);
         }
-
         .line{
             height:50px;
             width:40px;
@@ -199,7 +198,6 @@
         .text-shadow{
             text-shadow: 2px 2px 20px #dad4d4;
         }
-
 
         .ql-toolbar{
             width:auto;
@@ -210,7 +208,7 @@
             border: 2px solid #0000ff;
             box-shadow: 0 -1px 1px 1px blue;
         }
-        #editor1{
+        #editor{
             height:300px;
             width:500px;
             border: 1px solid #0000ff;
@@ -222,10 +220,11 @@
             padding-left:20px;
             padding-top:20px;
         }
+
         .hoverbtn:hover{
             background-color: rgb(17, 17, 252);
             color:white;
-        }        
+        }
 
     </style>
 </head>
@@ -240,16 +239,16 @@
                     </div>
                 </div>
                 <div class="inline-flex">
-                    <a href="page01.html" class="subnav">Personal</a><img src="symbols/bluehorizantalline.png"  class="line" >
-                    <a href="page02.html" class="subnav ">Work History</a><img src="symbols/bluehorizantalline.png" class="line"  >
+                    <a href="./page01.html" class="subnav">Personal</a><img src="/symbols/bluehorizantalline.png"  class="line" >
                     <div style="display:flex;flex-direction: column;">
-                        <a href="page01.html" class="subnav active" >Education</a>
-                        <img src="symbols/outlinbluearrowheaddown.png" style="height:15px;width:15px;align-self:center;"> 
+                        <a href="page01.html" class="subnav active" >Work History</a>
+                        <img src="/symbols/outlinbluearrowheaddown.png" style="height:15px;width:15px;align-self:center;"> 
                     </div>
-                    <img src="symbols/bluehorizantalline.png" class="line"  >
-                    <a href="" class="subnav text-hidden text-shadow">Skill</a><img src="symbols/horizantalline.png"  class="line">
+                    <img src="/symbols/bluehorizantalline.png" class="line"  >
+                    <a href="" class="subnav text-hidden text-shadow">Education</a><img src="/symbols/horizantalline.png" class="line"  >
+                    <a href="" class="subnav text-hidden text-shadow">Skill</a><img src="/symbols/horizantalline.png"  class="line">
                     <a href="" class="subnav text-hidden text-shadow">Finalize</a>
-                </div>
+               </div>
             </div>
             <div></div>
         </div>
@@ -257,7 +256,7 @@
             <div class="subhead">
                 <div class="subhead1" ></div>
                 <div class="subhead2">
-                    <p class="heading"> Let the employer know about your educational details </p>
+                    <p class="heading"> Tell employer about your most Resent Job</p>
                     <p class="subheading">We suggest you to include proper start and end date</p>
 
                 </div>
@@ -270,15 +269,15 @@
                 <div class="subseconddivcon">
                         <div class="textfield1">
                             <div style="margin:10px 25px 10px 25px;">
-                                <label for="jobtitle"  class="labelf">University Name : </label><br>
-                                <input type="name" id="unititle" class="textbox1" placeholder="First name">
+                                <label for="worktitle"  class="labelf">Job Title : </label><br>
+                                <input type="name" id="worktitle" class="textbox1" placeholder="First name">
                             </div>
                         </div>
         
                         <div class="textfield1" >
                             <div style="margin:10px 25px 10px 10px;">
-                                <label for="employer" class="labelf">Degree : </label><br>
-                                <input type="name" id="degree" class="textbox1" placeholder="Last name">
+                                <label for="employer" class="labelf">Employer : </label><br>
+                                <input type="name" id="workemployer" class="textbox1" placeholder="Last name">
                             </div>
                         </div>
                 </div>
@@ -286,15 +285,15 @@
                 <div class="subseconddivcon">
                     <div class="textfield1">
                         <div style="margin:10px 25px 10px 25px;">
-                            <label for="jobcity"  class="labelf">University country : </label><br>
-                            <input type="name" id="unicountry" class="textbox1" placeholder="First name">
+                            <label for="jobcity"  class="labelf">City : </label><br>
+                            <input type="name" id="workcity" class="textbox1" placeholder="First name">
                         </div>
                     </div>
 
                     <div class="textfield1" >
                         <div style="margin:10px 25px 10px 10px;">
-                            <label for="jobcountry" class="labelf">University City : </label><br>
-                            <input type="name" id="unicity" class="textbox1" placeholder="Last name">
+                            <label for="jobcountry" class="labelf">Country : </label><br>
+                            <input type="name" id="workcountry" class="textbox1" placeholder="Last name">
                         </div>
                     </div>
                 </div>
@@ -303,27 +302,25 @@
                     <div class="textfield1">
                         <div style="margin:10px 25px 10px 25px;">
                             <label for="startdate"  class="labelf">Start End : </label><br>
-                            <input type="text" placeholder="Start date" id="startdate" class="textbox1" onfocus="(this.type='month')">
+                            <input type="name" id="startdate" class="textbox1" placeholder="First name">
                         </div>
                     </div>
 
                     <div class="textfield1" >
                         <div style="margin:10px 25px 10px 10px;">
                             <label for="enddata" class="labelf">End Date : </label><br>
-                            <input type="" id="enddata" class="textbox1" placeholder="Last name">
+                            <input type="name" id="enddata" class="textbox1" placeholder="Last name">
                         </div>
                     </div>
                 </div>
-
-
-
+                
                 <div>
                     <h3 style="font-family:'Roboto',sans-serif;margin-left:40px;margin-top:20px;color:rgb(41, 41, 41);margin-bottom:2px;">Add description to this Section </h3>
                     <p style="font-family:'Roboto',sans-serif;font-size:17px;margin-left:41px;margin-top:2px;margin-bottom:10px;">we recomand to write text as unordered or ordered list</p>
                 </div>
                 <div style="display:flex;">
                     <div style="padding:20px;padding-left:35px;">
-                        <textarea id="editor1" placeholder="Enter text"></textarea>                        
+                        <textarea id="editor" placeholder="Enter text"></textarea>                        
                     </div>
                     <div class="worktextinput" class="display:flex;flex-direction:column;">
                         <h4 style="font-family:'Roboto',sans-serif;margin-left:40px;margin-top:20px;color:rgb(41, 41, 41);margin-bottom:2px;">Some Examples</h4>
@@ -342,72 +339,76 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+                
 
+
+            </div>
             <div class="thirdpage2con"></div>
         </div>
+
+
         <div style="display:flex;flex-direction:column;margin:0px;">  
             <div>
-                <a href="page02.html"><button class="btn2  hoverbtn" style="float:left;margin-left:165px;margin-top:50px;">Back</button>
-                <a href="page04.html" ><button class="btn2 hoverbtn " id="storebutton3" onclick="saveText1()" style="float:right;margin-right:150px;margin-top:50px;" onclick="topage3()"> Next </button></a>
+                <a href="page01.html"><button class="btn2 hoverbtn" style="float:left;margin-left:125px;margin-top:50px;">Back</button></a>
+                <a href="page03.html"><button class="btn2 hoverbtn" id="storebutton2" onclick="saveText()" style="float:right;margin-right:110px;margin-top:50px;"> Next </button></a>
             </div>
-            <div style="background: rgb(53, 52, 52);"></div>
+            <div style="background: rgb(53, 52, 52);height:30px;width:100%;"></div>
         </div>
+        
+        
     </div> 
 
 
 
 
-    <script>
-        var quill = new Quill('#editor', {
-          theme: 'snow',
-          modules: {
-            toolbar: [
-              [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-              ['bold', 'italic', 'underline', 'strike'],
-              [{ 'list': 'ordered' }, { 'list': 'bullet' }],
-              ['align', 'font', 'size'],
-              ['clean']
-            ]
-          },
-          placeholder: 'Generally write about your work experience ......',
-          // You can set additional options here
-        });
-    </script>
+    
+    <!--<script>
+      var quill = new Quill('#editor', {
+        theme: 'snow',
+        modules: {
+          toolbar: [
+            [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+            ['bold', 'italic', 'underline', 'strike'],
+            [{ 'list': 'ordered' }, { 'list': 'bullet' }],
+            ['align', 'font', 'size'],
+            ['clean']
+          ]
+        },
+        placeholder: 'Generally write about your work experience ......',
+        // You can set additional options here
+      });
+    </script>-->
 
     <script>
-        function saveText1() {
-            var text1 = document.getElementById("editor1").value;
-            localStorage.setItem("savedText1", text1);
+
+        function saveText() {
+            var text = document.getElementById("editor").value;
+            localStorage.setItem("savedText", text);
         }
 
-        
+    //----------------------------------------------------------
+    
+        const storebutton2 = document.getElementById('storebutton2');
+        const worktitle = document.getElementById('worktitle');
+        const workcity = document.getElementById('workcity');
+        const workcountry = document.getElementById('workcountry');
+        const workemployer = document.getElementById('workemployer');
 
-        //-------------------
 
+        storebutton2.addEventListener('click' , () =>{
+    
+            const jobtitlevalue = worktitle.value.trim();
+            const workcityvalue = workcity.value.trim();
+            const workcountryvalue = workcountry.value.trim();
+            const employervalue = workemployer.value.trim();
 
-        const storebutton3 =document.getElementById('storebutton3');
-        const unititle = document.getElementById('unititle');
-        const degree = document.getElementById('degree');
-        const unicity = document.getElementById('unicity');
-        const unicountry = document.getElementById('unicountry');
-
-        storebutton3.addEventListener('click' , () => {
-
-            const unitilevalue = unititle.value.trim();
-            const degreevalue = degree.value.trim();
-            const unicityvalue = unicity.value.trim();
-            const unicountryvalue = unicountry.value.trim();
-
-            localStorage.setItem('storeunititle' , unitilevalue) ;
-            localStorage.setItem('storedegree' , degreevalue);
-            localStorage.setItem('storeunicity' , unicityvalue);
-            localStorage.setItem('storeunicountry' , unicountryvalue);
-
+            localStorage.setItem('storejobtitle', jobtitlevalue);
+            localStorage.setItem('storeworkcity', workcityvalue);
+            localStorage.setItem('storeworkcountry', workcountryvalue);
+            localStorage.setItem('storeworkemployer' , employervalue);       
+            
+            
         })
-
-        
-
 
     </script>
     
