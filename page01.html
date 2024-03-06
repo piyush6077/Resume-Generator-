@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,200;1,100;1,200&family=Lobster&family=Mukta:wght@300;400&family=Noto+Sans+JP:wght@100;300&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif:ital@1&family=Oswald:wght@300&family=Poppins:wght@100;200&family=Roboto:ital,wght@0,400;1,100&display=swapfamily=IBM+Plex+Sans+Arabic:wght@400;500&family=Outfit:wght@500&family=Poppins:wght@200&family=Source+Sans+Pro:wght@200&display=swap&family=Titillium+Web:wght@600&display=swap" " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- link css -->
+    <link rel="stylesheet" href="page01.css">
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div></div>
+            <div class="headdiv2">
+                <div class="logo">
+                    <div class="logotext">
+                        <p>RG</p>
+                    </div>
+                </div>
+                <div class="inline-flex">
+                    <div style="display:flex;flex-direction: column;">
+                        <a href="page01.html" class="subnav active" >Personal</a>
+                        <img src="symbols/outlinbluearrowheaddown.png" style="height:15px;width:15px;align-self:center;"> 
+                    </div><img src="symbols/bluehorizantalline.png"  class="line" >
+                    <a href="" class="subnav text-hidden">Work History</a><img src="symbols/horizantalline.png" class="line"  >
+                    <a href="" class="subnav text-hidden">Education</a><img src="symbols/horizantalline.png" class="line"  >
+                    <a href="" class="subnav text-hidden">Skill</a><img src="symbols/horizantalline.png"  class="line">
+                    <a href="" class="subnav text-hidden">Finalize</a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="head" >
+            <p class="head1">
+               Tell more about yourself to your employer's 
+            </p>
+            <p class="subhead1">
+                we suggest you to add phone number and Email
+            </p>
+        </div>
+        <div class="page1maincontainer">
+            <div class="subfirstcontainer">
+                <div style="display:flex;flex-direction:row-reverse;margin-top:90px;">
+                    <div>
+                        <div>
+                            <div style="width:150px;height:200px;border:1px solid black;"  id="imageContainer">
+                                <img src="symbols/imageavatarphoto.jpg"  id="uploadedImage" style="width:100%;height:100%">
+                            </div>
+                            <button onclick="saveImage()">saveimg</button>
+                        </div>
+                        <div style="margin-top:20px;">
+                            <label for="imageFile" class="custom-button" >Upload</label>
+                            <input type="file" id="imageFile"  accept="image/*" capture="camera">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="subsecondcontainer">
+        
+                <div class="content1">
+                    <div class="textfield1">
+                        <div style="margin:10px 25px 10px 25px;">
+                            <label for="firstname"  class="labelf">First-Name : </label><br>
+                            <input type="name" id="firstname" class="textbox1" placeholder="First name">
+                        </div>
+                    </div>
+                
+                    <div class="textfield1" >
+                        <div style="margin:10px 25px 10px 25px;">
+                            <label for="Last-Name" class="labelf">Last-Name : </label><br>
+                            <input type="name" id="rsurname" class="textbox1" placeholder="Last name">
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="content1">
+                    <div class="textfield2">
+                        <div style="margin:10px 25px 10px 25px;">
+                            <label for="Profession" class="labelf">Profession : </label><br>
+                            <input type="address" id="profession" class="textbox1" placeholder=" eg : enginner , doctor etc ,">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="content1">
+                    <div class="textfield1" style="margin-top:0px;">
+                        <div  style="margin:10px 25px 10px 25px;">
+                            <label for="city1" class="labelf">City : </label><br>
+                            <input type = "city" id="city1" class="textbox1" placeholder = "eg : Mumbai , Delhi etc ">
+                        </div>
+                    </div>
+
+                    <div  class="textfield1" style="margin-top:0px;">
+                        <div style="margin:10px 25px 10px 25px;">
+                            <label for="country1" class="labelf">Country : </label><br>
+                            <input type="country" id="country1" class="textbox1"  placeholder="eg : India etc ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content1">
+                    <div class="textfield2" >
+                        <div style="margin:10px 25px 10px 25px;">
+                            <label for="E-mail" class="labelf" >E-mail : </label><br>
+                            <input type="email" id="email" class="textbox1" placeholder="eg : resumebuilder@gmail.com ">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="content1">
+                    <div class="textfield1" style="margin-top:0px;">
+                        <div style="margin:10px 25px 10px 25px;">
+                            <label for="contact" class="labelf">Phone : </label><br>
+                            <input type = "phonenumber" id="phonenumber" class="textbox1" placeholder = "  e.g : 9024548754 ">
+                        </div>
+                    </div>
+                    <div class="textfield1" style="margin-top:0px;">
+                        <div style="margin:10px 25px 10px 25px;">
+                            <label for="pincode " class="labelf">Pin-code : </label><br>
+                            <input type="Pin-code " id="pincode" class="textbox1"  placeholder="eg : 421501 ">
+                        </div>
+                    </div>
+                </div>
+            
+
+               
+                <div id="sociallink" class="addbtn1">
+                    <img class="img1" src="symbols/add.png" onclick=""><b class="labelf" id="addtext" style="padding:8px 10px;margin:0;font-size:15px;color:rgb(0, 89, 255)">Add social link </b>
+                </div>
+
+
+                <div class="socialbox" id="show">
+                    <div class="content3sub">
+                        <div class="firstcontent3">
+                            <div class="linkHead" >
+                                <p style="margin:0px;margin:5px 35px;">Linkedin</p>
+                            </div>
+                        </div>
+                        <div class="secondcontent3">
+                            <label for="URL" class="labelf"> URl : </label>
+                            <input type="url" id="twitter1" class="textbox3" placeholder="www.resumebuilder.com">
+                        </div>
+                    </div>
+                    <div class="content3sub">
+                        <div class="firstcontent3">
+                            <div class="linkHead" >
+                                <p style="margin:0px;margin:5px 42px;">Github</p>
+                            </div>
+                        </div>
+                        <div class="secondcontent3">
+                            <label for="URL" class="labelf"> URl : </label>
+                            <input type="url"id="github1" class="textbox3" placeholder="www.resumebuilder.com">
+                        </div>
+                    </div>
+                    <div class="content3sub">
+                        <div class="firstcontent3">
+                            <div class="linkHead" >
+                                <p style="margin:0px;margin:5px 37px;">Website</p>
+                            </div>
+                        </div>
+                        <div class="secondcontent3">
+                            <label for="URL" class="labelf"> URl : </label>
+                            <input type="url" id="website1" class="textbox3" placeholder="www.resumebuilder.com">
+                        </div>
+                    </div>
+                    <div id="socialbtn2" style="margin:5px 30px;">
+                        <img style="height:18px;width:15px;margin-top:15px;" src="symbols/minus-sign.png" onclick="notshown()"><b class="labelf" id="addtext" style="padding:1px 10px 10px 10px;;margin:0;font-size:15px;color:rgb(0, 89, 255)">Remove social link </b>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>     
+        </div>
+        <div style="display:flex;flex-direction:column;margin:0px;">  
+            <div>
+                <a href="index.html"><button class="btn2 hoverbtn" style="float:left;margin-left:183px;margin-top:50px;">Back</button></a>
+                <a href="page02.html"><button class="btn2 hoverbtn" onclick="saveImage()" id="storebtn" style="float:right;margin-right:183px;margin-top:50px;"> Next </button></a>
+            </div>
+            <div style="background: rgb(53, 52, 52);height:30px;width:100%;"></div>
+        </div>  
+         
+
+    </div>
+
+
+    <script>
+        
+
+        const socialbtn = document.getElementById("sociallink");
+        const socialbtn2 = document.getElementById("socialbtn2");
+
+
+
+        socialbtn.addEventListener('click', changeclass);
+
+        function changeclass(){
+            var changeclass = document.getElementById('show');
+
+            changeclass.classList.toggle('content3')
+        }
+
+        socialbtn2.addEventListener('click',notshown);
+
+        function notshown(){
+            var changeclass = document.getElementById('show');
+
+            changeclass.classList.remove('content3');
+        }
+
+        function saveImage() {
+            var fileInput = document.getElementById("imageFile");
+            var file = fileInput.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                var imageData = e.target.result;
+                localStorage.setItem("uploadedImage", imageData);
+                displayImage(imageData, "imageContainer");
+    
+
+            };
+
+            reader.readAsDataURL(file);
+        }
+
+        function displayImage(imageData, containerId) {
+            var imageContainer = document.getElementById(containerId);
+            imageContainer.innerHTML = "<img src='" + imageData + "' style='max-width: 100%; height: auto;'>";
+        }
+
+        window.addEventListener("DOMContentLoaded", function() {
+            var imageData = localStorage.getItem("uploadedImage");
+            if (imageData) {
+                displayImage(imageData, "imageContainer");
+            }
+        });
+
+        /*======================================-------------------------------------------------*/
+
+
+
+            const text1 = document.getElementById('firstname');
+            const text2 = document.getElementById('rsurname');
+            const storebtn = document.getElementById('storebtn');
+            const phone = document.getElementById('phonenumber');
+
+            const city01 = document.getElementById('city1');
+            const country01 = document.getElementById('country1');
+
+            const profession = document.getElementById('profession');
+            const email = document.getElementById('email');
+            const pincode = document.getElementById('pincode');
+            const twitter1 = document.getElementById('twitter1');
+            const github1 = document.getElementById('github1');
+            const website1 = document.getElementById('website1');
+
+            const imageface = document.getElementById('imageface');
+            
+
+            storebtn.addEventListener('click', () => {
+              
+                const value = text1.value.trim();
+                const value2 = text2.value.trim();
+                const value3 = phone.value.trim();
+                const value4 = city01.value.trim();
+                const value5 = country01.value.trim();
+
+                const professionvalue = profession.value.trim();
+                const emailValue = email.value.trim();
+                const pinvalue = pincode.value.trim();
+                const twittervalue = twitter1.value.trim();
+                const githubvalue = github1.value.trim();
+                const websitevalue = website1.value.trim();
+                
+                //const value6 = profession.value.trim();
+                //const value7 = email.value.trim();
+
+             //   const value6 = profession.value.trim();
+             //   const value7 = pincode.value.trim();
+              //  const value8 = email.value.trim();
+
+
+
+                localStorage.setItem('storetext1', value);
+                localStorage.setItem('storetext2', value2);
+                localStorage.setItem('storephone', value3);
+                
+
+                localStorage.setItem('storecity1', value4);
+                localStorage.setItem('storecountry1', value5);
+                localStorage.setItem('storeProfession' , professionvalue);
+                localStorage.setItem('storeEmail' , emailValue);
+                localStorage.setItem('storePincode', pinvalue);
+                localStorage.setItem('storetwitter' , twittervalue);
+                localStorage.setItem('storegithub', githubvalue);
+                localStorage.setItem('storewebsite', websitevalue);
+                
+           })
+    </script>
+    
+</body>

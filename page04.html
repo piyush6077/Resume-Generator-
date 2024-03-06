@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        .header{
+            /*background-color: orange;*/
+                display:grid;
+                grid-template-columns:4% 92% 4%;
+                padding-bottom:10px;
+                box-shadow: 2px 0px 10px rgb(122, 120, 120);
+                padding-top:3px;
+            }
+
+        .logo{
+            display:inline-flex;
+            float:left;
+            background-color:rgb(39, 39, 39);
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+            height:60px;
+            width:60px;
+            justify-content: center;
+            align-items:center;
+            margin:0px;
+        }
+
+        .logotext{
+            color:white;
+            padding:10px;
+            font-size:30px;
+            font-family:'Roboto';
+        }
+
+        
+        .head{
+            display:flex;
+            flex-wrap:nowrap;
+            flex-direction:column;
+            background-color: bue;
+            margin-bottom:0px;
+        }
+
+        .subhead{
+            display:flex;
+            flex-wrap:nowrap;
+            flex-direction:row;
+            background-color: ble;
+            margin-top:10px;
+        }
+
+        .subhead2{
+            width:1200px;
+            height:100px;
+            background-color:bleviolet;
+            margin:10px;
+        }
+        .heading{
+            height:auto;
+            margin: 10px;
+            font-size: 40px;
+            font-family:'outfit',sans-serif;
+            color:rgb(53, 52, 52);
+            margin-bottom:0px;
+        }
+        .subhead1{
+            width:100px;
+            height:auto;
+            background-color: aua;
+            margin:20px;
+        }
+        .subheading{
+            width:100%;
+            height:auto;
+            margin:0px;
+            margin-left:20px;
+            margin-top:5px;
+            font-size:20px;
+            font-family:'Roboto',sans-serif;
+            color:rgb(48, 44, 44);
+        }
+       
+        .headdiv2{
+            display:flex;
+            justify-content:space-between;
+        }
+
+        .inline-flex{
+            display:inline-flex;
+        }
+
+        .subnav{
+            margin-right:5px;
+            margin-left:5px;
+            font-family:'Outfit',sans-serif;
+            margin-top:25px;
+            font-weight:bold;
+            color:rgb(37, 37, 34);
+            text-decoration:none;
+        }
+        .text-hidden{
+            color:rgb(124, 122, 122);
+        }
+
+        .line{
+            height:50px;
+            width:40px;
+            margin-top:8px;
+        }
+        .text-shadow{
+            text-shadow: 2px 2px 20px #dad4d4;
+        }
+
+
+
+        .page2container{
+            display:flex;
+            background-color: oange;
+            flex-wrap:nowrap;
+        }
+        .firstpage2con{
+            width:100px;
+            height:400px;
+            background-color: aua;
+            margin:20px;
+        }
+        .secondpage2con{
+            display:flex;
+            flex-wrap:nowrap;
+            flex-direction: column;
+            width:1600px;
+            height:auto;
+            background-color: gb(82, 50, 224);
+            margin:20px;
+            margin-top:50px;
+        }
+            .subseconddivcon{
+                display:flex;
+                background-color: rb(43, 255, 0);
+                flex-wrap:nowrap;
+                flex-direction:column;
+            }
+            .subseconddivcon>div{
+                width:100%;
+                height:auto;
+                background-color:antquewhite;
+                margin:10px;
+            }
+             .labelf{
+                font-size:14px;
+                font-family:'Outfit',sans-serif;
+            }
+            .textfield1{
+                width:70%;
+                height:80px;
+                background-color:antiqewhite;
+                margin-bottom:0px;
+            }
+            .textbox1{
+                margin-top:5px;
+                width:100%;
+                border:1px solid rgb(31, 31, 255);
+                height:30px;
+                outline:none;
+                padding:4px ;
+                font-size: 15px;
+                padding-left:10px;
+
+            }
+            .textbox3{
+                margin-top:4px;
+                width:100%;
+                border:1px solid blue;
+                height:25px;
+                outline:none;
+                padding:4px;
+                padding-left:10px;
+            }
+            .labelf{
+                font-size:14px;
+                font-family:'Outfit',sans-serif;
+            }
+        .thirdpage2con{
+            width:100px;
+            height:400px;
+            background-color: ua;
+            margin:20px;
+        }
+        
+        #editor2{
+            height:200px;
+            width:100%;
+            border: 1px solid #0000ff;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            font-size:17px;
+            outline:none;
+            padding-left:20px;
+            padding-top:20px;
+            margin-top:20px;
+        }
+
+        #editor3{
+            height:200px;
+            width:100%;
+            border: 1px solid #0000ff;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            font-size:17px;
+            outline:none;
+            padding-left:20px;
+            padding-top:20px;
+           
+        }
+        #editor4{
+            height:200px;
+            width:100%;
+            border: 1px solid #0000ff;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            border-bottom-left-radius:5px;
+            border-bottom-right-radius:5px;
+            font-size:17px;
+            outline:none;
+            padding-left:20px;
+            padding-top:20px;
+            
+        }
+
+        .btn2{
+            background-color: whte;;
+            border:1px solid rgb(8, 8, 240);
+            padding:6px 45px;
+            margin-bottom:100px;
+            color:rgb(60, 60, 248);
+            font-size:15px;
+            text-decoration:none;
+        }
+
+        .hoverbtn:hover{
+          background-color: rgb(17, 17, 252);
+          color:white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div style="display:flex;flex-direction:column;">
+        <div class="header">
+            <div></div>
+            <div class="headdiv2">
+                <div class="logo">
+                    <div class="logotext">
+                        <p>RG</p>
+                    </div>
+                </div>
+                <div class="inline-flex">
+                    <a href="page01.html" class="subnav">Personal</a><img src="symbols/bluehorizantalline.png"  class="line" >
+                    <a href="page02.html" class="subnav ">Work History</a><img src="symbols/bluehorizantalline.png" class="line"  >
+                    <a href="page02.html" class="subnav ">Education</a><img src="symbols/bluehorizantalline.png" class="line"  >
+                    <div style="display:flex;flex-direction: column;">
+                        <a href="page01.html" class="subnav active" >Skills</a>
+                        <img src="symbols/outlinbluearrowheaddown.png" style="height:15px;width:15px;align-self:center;"> 
+                    </div>
+                    <img src="symbols/horizantalline.png"  class="line">
+                    <a href="" class="subnav text-hidden text-shadow">Finalize</a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+
+        <div class="head" >
+            <div class="subhead">
+                <div class="subhead1" ></div>
+                <div class="subhead2">
+                    <p class="heading"> Let add some additional information about yourself </p>
+                    <p class="subheading">when you add hit enter while writing this passage new bullet will be created</p>
+
+                </div>
+                <div class="subhead1"></div>
+            </div>
+        </div>
+
+        <div class="page2container">
+            <div class="firstpage2con"></div>
+            <div class="secondpage2con">
+                <div class="subseconddivcon">
+                    <div style="margin-top:0px;">
+                        <h3 style="font-family:'Roboto',sans-serif;margin-left:40px;margin-top:5px;color:rgb(41, 41, 41);margin-bottom:2px;">Accomplishment </h3>
+                        <p style="font-family:'Roboto',sans-serif;font-size:17px;margin-left:41px;margin-top:2px;margin-bottom:0px;">when you add hit enter while writing this passage new bullet will be created</p>
+                    </div>
+                    <div>
+                        <div style="display:flex;width:1000px;flex-wrap:nowrap;">
+                            <div style="display:flex;width:1000px;flex-wrap:nowrap;padding-left:35px;">
+                                <textarea id="editor2" placeholder="Enter text"></textarea>                        
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div>
+                        <h3 style="font-family:'Roboto',sans-serif;margin-left:40px;margin-top:20px;color:rgb(41, 41, 41);margin-bottom:2px;">Add Summary </h3>
+                        <p style="font-family:'Roboto',sans-serif;font-size:17px;margin-left:41px;margin-top:2px;margin-bottom:0px;">This area is exception , it is plain text</p>
+                    </div>
+                    <div>
+                        <div style="display:flex;width:1000px;flex-wrap:nowrap;">
+                            <div style="display:flex;width:1000px;flex-wrap:nowrap;padding-left:35px;">
+                                <textarea id="editor3" placeholder="Enter text"></textarea>                        
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <div>
+                        <h3 style="font-family:'Roboto',sans-serif;margin-left:40px;margin-top:20px;color:rgb(41, 41, 41);margin-bottom:2px;">Skills </h3>
+                        <p style="font-family:'Roboto',sans-serif;font-size:17px;margin-left:41px;margin-top:2px;margin-bottom:0px;">when you add hit enter while writing this passage new bullet will be created</p>
+                    </div>
+                    <div>
+                        <div style="display:flex;width:1000px;flex-wrap:nowrap;">
+                            <div style="display:flex;width:1000px;flex-wrap:nowrap;padding-left:35px;">
+                                <textarea id="editor4" placeholder="Enter text"></textarea>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thirdpage2con"></div>
+        </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;margin:0px;margin-top:20px;">  
+        <div>
+            <a href="page03.html"><button class="btn2  hoverbtn"  style="float:left;margin-left:123px;margin-top:50px;">Back</button></a>
+            <a href="template002.html" ><button class="btn2 hoverbtn" id="storebutton4"  style="float:right;margin-right:150px;margin-top:50px;" onclick="topage3()"> Next </button></a>
+        </div>
+        <div style="background: rgb(53, 52, 52);height:30px;width:100%;"></div>
+    </div>  
+
+
+
+    <script>
+
+
+        function saveText2() {
+            var text2 = document.getElementById("editor2").value;
+            localStorage.setItem("savedText2", text2);
+        }
+
+        function saveText4() {
+            var text4 = document.getElementById("editor4").value;
+            localStorage.setItem("savedText4", text4);
+        }
+
+
+
+        const editor3 = document.getElementById("editor3");
+        const storebutton4 = document.getElementById("storebutton4");
+
+        storebutton4.addEventListener('click' , () => {
+
+            const editor3value = editor3.value.trim();
+
+            localStorage.setItem("storeeditor3" , editor3value);
+
+            saveText2();
+            saveText4();
+        })
+        
+    </script>
+</body>
+</html>

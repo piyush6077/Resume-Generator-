@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,200;1,100;1,200&family=Lobster&family=Mukta:wght@300;400&family=Noto+Sans+JP:wght@100;300&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif:ital@1&family=Oswald:wght@300&family=Poppins:wght@100;200&family=Roboto:ital,wght@0,400;1,100&display=swapfamily=IBM+Plex+Sans+Arabic:wght@400;500&family=Outfit:wght@500&family=Poppins:wght@200&family=Source+Sans+Pro:wght@200&display=swap&family=Titillium+Web:wght@600&display=swap" " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="rsume.js"></script>
+    <style>
+        body{
+            font-family:'Outfit',sans-serif;
+            margin:0px;
+        }
+        .template01-maincontainer{
+            display:flex;
+            flex-wrap:nowrap;
+            background-color:orane;
+            padding-bottom:100px;
+        }
+
+        .fillupcontainer{
+            width:300px;
+            height:auto;
+            background-color:aquaarine;
+            margin:10px;
+        }
+        .subcontainer-template01{
+            display:flex;
+            flex-direction: column;
+            flex-wrap:nowrap;
+            width:850px;
+            height:1000px;
+            background-color:aqamarine;
+            margin:10px;
+            margin-right:0;
+            margin-left:0;
+            box-shadow: 5px 5px 12px rgb(73, 72, 72);;
+        }
+
+        .sub1-firstcontext{
+            height:auto;
+            width:100%;
+            background-color:gry;
+        }
+
+
+        /*=-------------------------------- sub1-firstcontext Ends here ----------------------------=*/
+
+
+        .sub1-secondcontext{
+            display:flex;
+            flex-wrap:nowrap;
+            background-color:whte;
+            box-shadow: 5px 5px 12px rgb(73, 72, 72);;
+        }
+
+        .sub1-seccon1{
+            display:flex;
+            flex-wrap:nowrap;
+            flex-direction:column;
+            background-color:bron;
+            margin:0px 0px 0px 0px;
+            padding-left:25px;
+        }
+
+        .sub1-seccon2{
+            display:flex;
+            flex-wrap:nowrap;
+            flex-direction:column;
+            height:auto;
+            width:600px;
+            background-color:rown;
+            margin:0px 0px 0px 0px;
+            padding-right:25px;
+        }
+        
+
+        .symbol1{
+            display:flex;
+            width:35px;
+            height:30px;
+            border:3px solid rgb(34, 34, 247);
+            border-radius:4px;
+            justify-content:center;
+            align-items:center;
+            box-shadow: 1px 2px 12px rgb(34, 34, 247);
+            margin:20px 5px 20px 20px;
+        }
+
+        .symbol2{
+            display:flex;
+            background-color: rgb(13, 13, 150);
+            height:45px;
+            width:45px;
+            border-radius:50%;
+            justify-content: center;
+            align-items:center;
+            margin:15px 5px 20px 20px;
+        }
+
+        .font11{
+            font-size:18px;
+            margin:0px;
+            color:rgb(26, 25, 25);
+        }
+
+        .text-somewhatblack{
+            color:rgb(77, 75, 75);
+        }
+
+
+        .header{
+            /*background-color: orange;*/
+                display:grid;
+                grid-template-columns:4% 92% 4%;
+                padding-bottom:10px;
+                box-shadow: 2px 0px 10px rgb(122, 120, 120);
+                padding-top:3px;
+                margin:0px;
+            }
+
+        .logo{
+                display:inline-flex;
+                float:left;
+                background-color:rgb(39, 39, 39);
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                border-top-right-radius: 30px;
+                height:60px;
+                width:60px;
+                justify-content: center;
+                align-items:center;
+                margin:0px;
+            }
+
+        .logotext{
+                color:white;
+                padding:10px;
+                font-size:30px;
+                font-family:'Roboto';
+        }
+
+        .headdiv2{
+            display:flex;
+            justify-content:space-between;
+            font-family:'outfit',sans-serif;
+            font-size:16px;
+            letter-spacing: 0.8px;
+        }
+
+        .inline-flex{
+            display:inline-flex;
+        }
+
+        .subnav{
+            margin-right:5px;
+            margin-left:5px;
+            font-family:'Roboto',sans-serif;
+            margin-top:25px;
+            font-weight:bolder;
+            text-shadow: 2px 2px 20px #d4cfcf;
+            color:rgb(37, 37, 34);
+            text-decoration:none;
+        }
+        .text-hidden{
+            color:rgb(124, 122, 122);
+        }
+
+        .line{
+            height:50px;
+            width:40px;
+            margin-top:10px;
+        }
+
+        .underline{
+            border-bottom: 3px solid rgb(54, 54, 54);
+        }
+
+        .colorbtn{
+            height:35px;
+            border-radius:50%;
+            width:35px;
+            border:none;
+            margin-right:10px;
+        }
+
+        .btnprint{
+            display:flex;
+            align-self:center;
+            justify-content:center;
+            padding:10px 80px;
+            font-size:17px;
+            font-family:'Roboto',sans-serif;
+            color:white;
+            background-color:blue;
+            border:none;
+            border-radius:2px;
+        }
+
+        .list-item {
+            width: 360px;
+            word-wrap: break-word;
+        }
+        .list-item1{
+            width:200px;
+            word-wrap: break-word;
+        }
+
+        @media print{
+            body *{
+                visibility:hidden;
+            }
+
+            .contentprint , .contentprint *{
+                visibility:visible;
+            }
+
+            .contentprint{
+                position:absolute;
+                left:0;
+                top:0;
+            }
+        }
+
+
+    </style> 
+</head>
+<body>
+    <div class="header" >
+        <div></div>
+        <div class="headdiv2">
+            <div class="logo">
+                <div class="logotext">
+                    <p>RG</p>
+                </div>
+            </div>
+            <div class="inline-flex">
+                <a href="page01.html" class="subnav">Personal</a><img src="symbols/bluehorizantalline.png"  class="line" >
+                <a href="page02.html" class="subnav ">Work History</a><img src="symbols/bluehorizantalline.png" class="line"  >
+                <a href="page03.html" class="subnav ">Education</a><img src="symbols/bluehorizantalline.png" class="line"  >
+                <a href="template001.html" class="subnav">Skills</a><img src="symbols/bluehorizantalline.png" class="line"  >
+                <div style="display:flex;flex-direction: column;">
+                    <a href="page01.html" class="subnav active" >Finalize</a>
+                    <img src="symbols/outlinbluearrowheaddown.png" style="height:15px;width:15px;align-self:center;"> 
+                </div>
+                
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+    <div style="margin-top:20px;margin-bottom:20px;display:flex;justify-content: center;">
+        <div style="display:inline-flex;">
+            <div style="display:flex;align-self:center;margin-right:40px;"> Change Color</div>
+        
+            <div class="fillupcontainer">
+                <button id="firstbtn" class="colorbtn" style="background-color:grey;">
+                </button>
+                <button id="secondbtn" class="colorbtn" style="background-color:rgb(48, 47, 47);">
+                </button>
+                <button id="thirdbtn" class="colorbtn"  style="background-color:brown;">
+                </button>
+                <button id="fourthbtn"  class="colorbtn" style="background-color: rgb(13, 13, 150);">
+                </button>
+                <button id="fifthbtn"  class="colorbtn" style="background-color:aquamarine;">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="template01-maincontainer">
+                <div class="fillupcontainer"></div>
+            <!--<div class="subcontainer-template01">
+                <div class="sub1-firstcontext">
+                    <div class="nomen" id="headname" style="font-size:48px;margin:20px;margin-bottom:2px;font-family:'Outfit',sans-serif;color:rgb(13, 13, 150);">
+                        <span style="margin-right:8px;" id="rfirstname"> james </span><span id="surname"></span>
+                        <!--<span > James </span><span > Watson</span>
+                    </div>
+                    <div class="compname" id="jobtitle" style="margin:25px;margin-top:0px;margin-bottom:15px;font-size:21px;font-family:'Roboto',sans-serif;color:rgb(13, 13, 150);">
+                        <span id="profession"> Software engineer</span>
+                    </div>
+                    <div>
+                        <div class="workexp" style="display:flex;font-family:'Roboto',sans-serif;font-size:15px;margin:25px;margin-top:10px;font-family:'Roboto',sans-serif;font-size:15px;">
+                           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatum cumque repellat tempore. Dolorem quo corrupti quibusda
+                            m, fugit saepe modi voluptate, laudantium nulla neque sed repudiandae numquam reprehenderit alias. Fuga?
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            -->
+                
+                <div class="sub1-secondcontext contentprint" style="padding-top:20px;margin:0px;">
+                    <div class="sub1-seccon1"  >
+                        <div class="imagephoto" style="height:250px;width:250px;background-color:antquewhite;margin-top:15px;">
+                            <img src="symbols/imageavatarphoto.jpg" id="uploadedImage" style="width:100%;height:100%">
+                        </div>
+                        <div style="display:flex;flex-direction:row;margin-bottom:5px;">
+                            <div class="symbol2" style="margin-left:0px;background-color: gb(13, 13, 150);" id="symbol1" >
+                                <img src="symbols/avatarstar.png" style="width:45px;height:45px;">
+                            </div>
+                        <h3 id="subhead1" style="margin:20px;margin-left:10px;font-weight:lighter;margin-right:0px;font-family:'Outfit',sans-serif;font-size:25px;width:100%;color:rgb(13, 13, 150);border-bottom:2px solid rgb(13, 13, 150);">Contact </h3>                         
+                        </div>
+                        <div style="font-family:'Roboto',sans-serif;margin-top:0px;">
+                            <div style="margin-bottom:5px;">
+                                <p class="font11">Address :</p>
+                                <i class="text-somewhatblack"><span id="city1"></span>,&nbsp;<span id="country1"></span>&nbsp;<span  id="pincode"></span></i>
+                            </div>
+                            <div style="margin-bottom:5px;">
+                                <p class="font11">Phone : </p>
+                                <span class="text-somewhatblack" id="phone">5456144551225</span></i>
+                            </div>
+                            <div style="margin-bottom:5px;">
+                                <p class="font11">Email : </p>
+                                <i><span class="text-somewhatblack" id="email">something</span></i>
+                            </div>
+                            <div style="margin-bottom:5px;">
+                                <p class="font11">Linkedin : </p>
+                                <i><span class="text-somewhatblack" id="twitter">something</span></i>
+                            </div>
+                            <div style="margin-bottom:5px;">
+                                <p class="font11">Github : </p>
+                                <i><span class="text-somewhatblack" id="github">something</span></i>
+                            </div>
+                            <div style="margin-bottom:5px;">
+                                <p class="font11">Website : </p>
+                                <i><span class="text-somewhatblack" id="website">something</span></i>
+                            </div>
+                        </div>
+
+                        <!----->
+                        <div style="display:flex;flex-direction:column;margin-bottom:5px;">
+                            <div class="symbol2" style="margin-left:0px;background-color: rb(13, 13, 150);" id="symbol5" >
+                                <img src="symbols/avatarstar.png" style="width:45px;height:45px;">
+                            </div>
+                        <h3 id="subhead4" style="margin:20px;margin-bottom:10px;margin-left:10px;font-weight:lighter;margin-right:0px;font-family:'Outfit',sans-serif;font-size:25px;width:100%;color:rgb(13, 13, 150);border-bottom:2px solid rgb(13, 13, 150);">Skills </h3>     
+                            <div>
+                                <ul id="output4"></ul> 
+                            </div>                   
+                        </div>
+
+                    </div>
+                
+                    <div class="sub1-seccon2">
+                        <div style="width:550px;">
+                            <div class="sub1-firstcontext">
+                                <div class="nomen" id="headname" style="font-size:50px;margin:20px;margin-top:2px;margin-bottom:2px;font-family:'Outfit',sans-serif;color:rgb(13, 13, 150);">
+                                    <span style="margin-right:8px;" id="rfirstname"> James </span><span id="surname">watson</span>
+                                    <!--<span > James </span><span > Watson</span>-->
+                                </div>
+                                <div class="compname" id="jobtitle" style="margin:25px;margin-top:0px;margin-bottom:15px;font-size:21px;font-family:'Roboto',sans-serif;color:rgb(13, 13, 150);">
+                                    <span id="profession"> Software engineer</span>
+                                </div>
+                                <div>
+                                    <div class="workexp" style="display:flex;font-family:'Roboto',sans-serif;font-size:15px;margin:25px;margin-top:10px;font-family:'Roboto',sans-serif;font-size:15px;">
+                                       <div id="editor3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div style="display:flex;flex-direction:row;">
+                                <!--<div class="symbol1">
+                                    <img src="symbols/suitcase (1).png" style="width:40px;height:40px;">
+                                </div>-->
+                            <div class="symbol2" id="symbol2" style="background-color: rgb(13, 13, 150);" >
+                                    <img src="symbols/whitesuitcase.png" style="width:45px;height:45px;">
+                            </div>
+                            <h3  id="subhead2" style="margin:20px;margin-left:10px;font-weight:lighter;margin-right:0px;font-family:'Outfit',sans-serif;font-size:25px;width:100%;color:rgb(13, 13, 150);border-bottom:2px solid rgb(13, 13, 150);">Work History </h3>                         
+                        </div>
+                        <div style="display:flex;flex-direction:row;background-color:bluevioet;">
+                            <div style="height:100px;width:120px;background-color:antiuewhite;margin:10px;margin-left:5px;margin-right:0px;">
+                                <span style="margin-left:20px;font-family:'Titillium Web',sans-serif;" >2023-2024</span>
+                            </div>
+                        <div style="height:auto;width:480px;background-color:antiquewhie;margin:10px;margin-left:5px;margin-right:0px;margin-top:0px;">
+                            <h4 style="font-size:21px;margin-top:0px;margin-left:2px;margin-bottom:5px;font-family:'Outfit',sans-serif;font-weight:lighter;" id="worktitle">Software Engineer</h4>
+                            <div style="margin-top:0px;margin-left:2px;font-style:italic;font-family:'Roboto',sans-serif;">
+                                <span  class="text-somewhatblack" id="workemployer">companyname</span>&nbsp;<span  class="text-somewhatblack" id="workcity">city</span>&nbsp;<span  class="text-somewhatblack" id="workcountry">country</span>
+                            </div>
+                            <div style="display:flex;flex-direction:column;text-align:justify;font-family:'Roboto',sans-serif;padding-left:26px;padding-right:10px;">
+                               
+                                <ul id="output" ></ul>
+                            </div>
+                        </div>
+                        </div>
+
+                        
+                        <div style="display:flex;flex-direction:row;">
+                            <div class="symbol2" id="symbol3"  style="margin-left:25px;width:50px;padding-top:2px;background-color: rb(13, 13, 150);">
+                                <img src="symbols/education.png" style="width:45px;height:45px;">
+                            </div>
+                            <h3 id="subhead3" style="margin:20px;margin-left:10px;font-weight:lighter;margin-right:0px;font-family:'Outfit',sans-serif;font-size:25px;width:100%;color:rgb(13, 13, 150);border-bottom:2px solid rgb(13, 13, 150);">Education </h3>                         
+                        </div>   
+                        <div style="display:flex;flex-direction:row;background-color:bueviolet;">
+                            <div style="height:100px;width:120px;background-color:antiuewhite;margin:10px;margin-right:0px;">
+                                <span style="margin-left:20px;font-family:'Titillium Web',sans-serif;">2023-2024</span>
+                            </div>
+                        <div style="height:auto;width:480px;background-color:antquewhite;margin:10px;margin-right:0px;margin-right:0px;">
+                            <h4 style="font-size:21px;margin-top:0px;margin-bottom:5px;font-family:'Outfit',sans-serif;font-weight:lighter;" id="degree">Degree</h4>
+                            <div style="margin-top:0px;font-style:italic;font-family:'Roboto',sans-serif;">
+                                <span  class="text-somewhatblack" id="unititle">uniname,</span>&nbsp;--<span  class="text-somewhatblack" id="unicity">city,</span>&nbsp;<span  class="text-somewhatblack" id="unicountry">country</span>
+                            </div>
+                            <div style="display:flex;flex-direction:column;text-align:justify;font-family:'Roboto',sans-serif;padding-left:26px;padding-right:10px;max-width:100px;">
+                                <ul id="output2" style="width:100px"></ul>
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <div style="display:flex;flex-direction:row;">
+                            <div class="symbol2" id="symbol4" style="background-color: rgb(13, 13, 150);" >
+                                <img src="symbols/whitesuitcase.png" style="width:45px;height:45px;">
+                            </div>
+                            <h3 id="subhead5" style="margin:20px;margin-left:10px;font-weight:lighter;margin-right:0px;font-family:'Outfit',sans-serif;font-size:25px;width:100%;color:rgb(13, 13, 150);border-bottom:2px solid rgb(13, 13, 150);">Accomplishment </h3>                                             </div>
+                        <div style="display:flex;flex-direction:row;background-color:bluevilet;">
+                            <div style="height:100px;width:120px;background-color:antiquewhte;margin:10px;margin-right:0px;">
+                                <span style="margin-left:20px;font-family:'Titillium Web',sans-serif;"></span>
+                            </div>
+                        <div style="height:auto;width:480px;background-color:antiquewite;margin:10px;margin-right:0px;margin-right:0px;">
+                            <div style="display:none;">
+                                <h4 style="font-size:21px;margin-top:0px;margin-bottom:5px;font-family:'Outfit',sans-serif;font-weight:lighter;"></h4>
+                                <div style="margin-top:0px;font-style:italic;font-family:'Roboto',sans-serif;">
+                                </div>
+                            </div>
+                            <div style="display:flex;flex-direction:column;text-align:justify;font-family:'Roboto',sans-serif;padding-left:26px;padding-right:10px;margin-top:none;">
+                                <ul id="output3"></ul>
+                                <span id="editortext" style="display:none"></span>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+
+            <div>
+                <div style="display:flex;justify-content:center;align-items:center;width:100%;height:80px;position:fixed;bottom:0px;background-color: #f3f3f3;">
+                    <button class="btnprint" id="printbtn" >Download PDF</button>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+
+
+    <script>
+
+        const printbtn = document.getElementById('printbtn');
+
+        printbtn.addEventListener( 'click' , () => {
+            window.print();   
+        })
+        
+        const symbol1 = document.getElementById('symbol1');
+        const symbol2 = document.getElementById('symbol2');
+        const symbol3 = document.getElementById('symbol3');
+        const symbol4 =document.getElementById('symbol4');
+        const symbol5 =document.getElementById('symbol5');
+        const name = document.getElementById('headname');
+        const comname = document.getElementById('jobtitle');
+
+        const subhead1 = document.getElementById('subhead1');
+        const subhead2 = document.getElementById('subhead2');
+        const subhead3 = document.getElementById('subhead3');
+        const subhead4 = document.getElementById('subhead4');
+        const subhead5 = document.getElementById('subhead5');
+
+        const button1 = document.getElementById('firstbtn');
+        const button2 = document.getElementById('secondbtn');
+        const button3 = document.getElementById('thirdbtn');
+        const button4 = document.getElementById('fourthbtn');
+        const button5 = document.getElementById('fifthbtn');
+
+
+
+        button1.addEventListener('click', () => {
+            symbol2.style.backgroundColor = 'grey';
+            symbol1.style.backgroundColor = 'grey';
+            symbol3.style.backgroundColor = 'grey';
+            symbol4.style.backgroundColor = 'grey';
+            symbol5.style.backgroundColor = 'grey';
+            name.style.color = 'grey';
+            comname.style.color = 'grey';
+            subhead1.style.color = 'grey';
+            subhead1.style.borderColor = 'grey';
+            subhead2.style.color = 'grey';
+            subhead2.style.borderColor = 'grey';
+            subhead3.style.color = 'grey';
+            subhead3.style.borderColor = 'grey';
+            subhead4.style.color = 'grey';
+            subhead4.style.borderColor = 'grey';
+            subhead5.style.color = 'grey';
+            subhead5.style.borderColor = 'grey';
+        } )
+
+        button2.addEventListener('click', () => {
+            symbol2.style.backgroundColor = 'rgb(48, 47, 47)';
+            symbol1.style.backgroundColor = 'rgb(48, 47, 47)';
+            symbol3.style.backgroundColor = 'rgb(48, 47, 47)';
+            symbol4.style.backgroundColor = 'rgb(48, 47, 47)';
+            symbol5.style.backgroundColor = 'rgb(48, 47, 47)';
+            name.style.color = 'rgb(48, 47, 47)';
+            comname.style.color = 'rgb(48, 47, 47)';
+            subhead1.style.color = 'rgb(48, 47, 47)';
+            subhead1.style.borderColor = 'rgb(48, 47, 47)';
+            subhead2.style.color = 'rgb(48, 47, 47)';
+            subhead2.style.borderColor = 'rgb(48, 47, 47)';
+            subhead3.style.color = 'rgb(48, 47, 47)';
+            subhead3.style.borderColor = 'rgb(48, 47, 47)';
+            subhead4.style.color = 'rgb(48, 47, 47)';
+            subhead4.style.borderColor = 'rgb(48, 47, 47)';
+            subhead5.style.color = 'rgb(48, 47, 47)';
+            subhead5.style.borderColor = 'rgb(48, 47, 47)';
+        } )
+
+        button3.addEventListener('click', () => {
+            symbol2.style.backgroundColor = 'brown';
+            symbol1.style.backgroundColor = 'brown';
+            symbol3.style.backgroundColor = 'brown';
+            symbol4.style.backgroundColor = 'brown';
+            symbol5.style.backgroundColor = 'brown';
+            name.style.color = 'brown';
+            comname.style.color = 'brown';
+            subhead1.style.color = 'brown';
+            subhead1.style.borderColor = 'brown';
+            subhead2.style.color = 'brown';
+            subhead2.style.borderColor = 'brown';
+            subhead3.style.color = 'brown';
+            subhead3.style.borderColor = 'brown';
+            subhead4.style.color = 'brown';
+            subhead4.style.borderColor = 'brown';
+            subhead5.style.color = 'brown';
+            subhead5.style.borderColor = 'brown';
+        } )
+
+        button4.addEventListener('click', () => {
+            symbol2.style.backgroundColor = 'rgb(13, 13, 150)';
+            symbol1.style.backgroundColor = 'rgb(13, 13, 150)';
+            symbol3.style.backgroundColor = 'rgb(13, 13, 150)';
+            symbol4.style.backgroundColor = 'rgb(13, 13, 150)';
+            symbol5.style.backgroundColor = 'rgb(13, 13, 150)';
+            name.style.color = 'rgb(13, 13, 150)';
+            comname.style.color = 'rgb(13, 13, 150)';
+            subhead1.style.color = 'rgb(13, 13, 150)';
+            subhead1.style.borderColor = 'rgb(13, 13, 150)';
+            subhead2.style.color = 'rgb(13, 13, 150)';
+            subhead2.style.borderColor = 'rgb(13, 13, 150)';
+            subhead3.style.color = 'rgb(13, 13, 150)';
+            subhead3.style.borderColor = 'rgb(13, 13, 150)';
+            subhead4.style.color = 'rgb(13, 13, 150)';
+            subhead4.style.borderColor = 'rgb(13, 13, 150)';
+            subhead5.style.color = 'rgb(13, 13, 150)';
+            subhead5.style.borderColor = 'rgb(13, 13, 150)';
+        } )
+
+        button5.addEventListener('click', () => {
+            symbol2.style.backgroundColor = 'aquamarine';
+            symbol1.style.backgroundColor = 'aquamarine';
+            symbol3.style.backgroundColor = 'aquamarine';
+            symbol4.style.backgroundColor = 'aquamarine';
+            symbol5.style.backgroundColor = 'aquamarine';
+            name.style.color = 'aquamarine';
+            comname.style.color = 'aquamarine';
+            subhead1.style.color = 'aquamarine';
+            subhead1.style.borderColor = 'aquamarine';
+            subhead2.style.color = 'aquamarine';
+            subhead2.style.borderColor = 'aquamarine';
+            subhead3.style.color = 'aquamarine';
+            subhead3.style.borderColor = 'aquamarine';
+            subhead4.style.color = 'aquamarine';
+            subhead4.style.borderColor = 'aquamarine';
+            subhead5.style.color = 'aquamarine';
+            subhead5.style.borderColor = 'aquamarine';
+        } )
+
+
+
+
+        const firstname = document.getElementById("rfirstname");
+        const storetext1 = localStorage.getItem("storetext1");
+
+        if (storetext1) {
+            firstname.textContent = storetext1;
+        }
+
+//document.getElementById("surname").innerHTML = localStorage.getItem("storetext2");
+
+
+        const surname = document.getElementById('rsurname') ;       
+        document.getElementById("surname").innerHTML = localStorage.getItem("storetext2");
+          
+//phonenumber
+
+        const phonenumber = document.getElementById("phone");
+        const storephone = localStorage.getItem("storephone");
+
+        if (storephone) {
+            phonenumber.textContent = storephone;
+        }
+
+// city
+        const city1 = document.getElementById("city1");
+        const storecity1 = localStorage.getItem("storecity1");
+
+        if (storecity1) {
+            city1.textContent = storecity1;
+        }
+
+// country 
+        const country1 = document.getElementById("country1");
+        const storecountry1 = localStorage.getItem("storecountry1");
+
+        if (storecountry1) {
+            country1.textContent = storecountry1;
+        }
+//profession
+        const profession = document.getElementById("profession");
+        const storeProfession = localStorage.getItem("storeProfession");
+
+        if (storeProfession) {
+            profession.textContent = storeProfession;
+        }
+
+//pincode
+        const pincode = document.getElementById("pincode");
+        const storePincode = localStorage.getItem("storePincode");
+
+        if (storePincode) {
+            pincode.textContent = storePincode;
+        }
+
+//Email
+        const email = document.getElementById("email");
+        const storeEmail = localStorage.getItem("storeEmail");
+
+        if (storeEmail) {
+            email.textContent = storeEmail;
+        }
+
+//Twitter
+        const twitter = document.getElementById("twitter");
+        const storetwitter = localStorage.getItem("storetwitter");
+
+        if (storetwitter) {
+            twitter.textContent = storetwitter;
+        }
+
+//Github
+        const github = document.getElementById("github");
+        const storegithub = localStorage.getItem("storegithub");
+
+        if (storegithub) {
+            github.textContent = storegithub;
+        }
+   
+//Website
+        const website = document.getElementById("website");
+        const storewebsite = localStorage.getItem("storewebsite");
+
+        if (storewebsite) {
+            website.textContent = storewebsite;
+        }
+
+//editor3
+        const editor3 = document.getElementById("editor3");
+        const storeeditor3 = localStorage.getItem("storeeditor3");
+
+        if (storeeditor3) {
+            editor3.textContent = storeeditor3;
+        }
+
+//jobtitle
+        
+        const worktitle = document.getElementById("worktitle");
+        const storejobtitle = localStorage.getItem("storejobtitle");
+
+        if (storejobtitle) {
+            worktitle.textContent = storejobtitle;
+        }
+
+//Employer
+
+        const employe = document.getElementById("employe");
+        const storeemployer = document.getElementById("storeemployer");
+
+        if (storeemployer) {
+            employe.textContent = storeemployer;
+        }
+
+//Workemployer
+
+        const workemployer = document.getElementById("workemployer");
+        const storeworkemployer = localStorage.getItem("storeworkemployer");
+
+        if (storeworkemployer) {
+            workemployer.textContent = storeworkemployer;
+        }
+
+
+//workcity
+      
+        const workcity = document.getElementById("workcity");
+        const storeworkcity = localStorage.getItem("storeworkcity");
+
+        if (storeworkcity) {
+            workcity.textContent = storeworkcity;
+        }
+
+//workcountry
+      
+        const workcountry = document.getElementById("workcountry");
+        const storeworkcountry = localStorage.getItem("storeworkcountry");
+
+        if (storeworkcountry) {
+            workcountry.textContent = storeworkcountry;
+        }
+
+        
+//unititle
+    
+        const unititle = document.getElementById("unititle");
+        const storeunititle = localStorage.getItem("storeunititle");
+    
+        if (storeunititle) {
+            unititle.textContent = storeunititle;
+        }
+
+//degree
+        
+        const degree = document.getElementById("degree");
+        const storedegree = localStorage.getItem("storedegree");
+    
+        if (storeunititle) {
+            degree.textContent = storedegree;
+        }
+       
+
+//unicity
+        const unicity = document.getElementById("unicity");
+        const storeunicity = localStorage.getItem("storeunicity");
+    
+        if (storeunicity) {
+            unicity.textContent = storeunicity;
+        }
+       
+
+//unicountry
+        const unicountry = document.getElementById("unicountry");
+        const storeunicountry = localStorage.getItem("storeunicountry");
+    
+        if (storeunicountry) {
+            unicountry.textContent = storeunicountry;
+        }
+
+//imageinput
+
+        window.addEventListener("DOMContentLoaded", function() {
+            var uploadedImage = document.getElementById("uploadedImage");
+            var imageData = localStorage.getItem("uploadedImage");
+
+            if (imageData) {
+                uploadedImage.src = imageData;
+            }
+        });
+
+
+
+
+
+
+
+/// Editor1
+        var savedText = localStorage.getItem("savedText");
+        var lines = savedText.split("\n");
+        var list = document.getElementById("output");
+
+
+        lines.forEach(function(line) {
+            var listItem = document.createElement("li");
+            listItem.classList.add("list-item");
+            var textNode = document.createTextNode(line);
+            listItem.appendChild(textNode);
+            list.appendChild(listItem);
+        });
+
+//Editor2
+        var savedText1 = localStorage.getItem("savedText1");
+        var lines1 = savedText1.split("\n");
+        var list1 = document.getElementById("output2");
+
+        lines1.forEach(function(line1) {
+            var listItem1 = document.createElement("li");
+            listItem1.classList.add("list-item");
+            var textNode1 = document.createTextNode(line1);
+            listItem1.appendChild(textNode1);
+            list1.appendChild(listItem1);
+        });
+
+
+//Editor3
+        var savedText2 = localStorage.getItem("savedText2");
+        var lines2 = savedText2.split("\n");
+        var list2 = document.getElementById("output3");
+
+        lines2.forEach(function(line2) {
+            var listItem2 = document.createElement("li");
+            listItem2.classList.add("list-item");
+            var textNode2 = document.createTextNode(line2);
+            listItem2.appendChild(textNode2);
+            list2.appendChild(listItem2);
+        });
+
+//Editor4
+        var savedText4 = localStorage.getItem("savedText4");
+        var lines4 = savedText4.split("\n");
+        var list4 = document.getElementById("output4");
+
+        lines4.forEach(function(line4) {
+            var listItem4 = document.createElement("li");
+            listItem4.classList.add("list-item1");
+            var textNode4 = document.createTextNode(line4);
+            listItem4.appendChild(textNode4);
+            list4.appendChild(listItem4);
+        });
+/*
+/*
+        var savedText1 = localStorage.getItem("savedText1");
+        var lines1 = savedText1.split("\n");
+        var list1 = document.getElementById("output2");
+
+        lines1.forEach(function(line1) {
+            var listItem1 = document.createElement("li");
+            var textNode1 = document.createTextNode(line1);
+            listItem1.appendChild(textNode1);
+            list1.appendChild(listItem1);
+        });
+*/
+
+
+    </script>
+
+    </script>
+
+</body>
+</html>
